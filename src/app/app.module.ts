@@ -11,6 +11,9 @@ import { TerminosComponent } from './components/terminos/terminos.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { FAQComponent } from './components/faq/faq.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
 
 
 
@@ -30,7 +33,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule,
+    IvyCarouselModule
+   
     
   ],
   providers: [],

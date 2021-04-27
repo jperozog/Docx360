@@ -4,7 +4,7 @@
             <div class="izquierda">
                 <div class="contacto">
                     <img class="img-responsive" src="assets/img/Phone.png">
-                    <p>+57 123 1234567</p>
+                    <p>+(55) 5308 1018</p>
                 </div>
                 <div class="mail">
                     <img class="img-responsive" src="assets/img/Mail.png">
@@ -42,8 +42,8 @@
                         <fa-icon [icon]="faBars"></fa-icon>
                     </label>
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Precios</a></li>
+                        <li><a routerLink="/home">Home</a></li>
+                        <li><a routerLink="/precios">Precios</a></li>
                         <li><a routerLink="/faq">Preguntas Frecuentes</a></li>
                         <li><a routerLink="/terminos">Términos y Condiciones</a></li>
                         <li><a routerLink="/contacto">Contáctanos</a></li>
@@ -72,13 +72,9 @@
             <div class="parrafo">
                 <div id="menu">
                     <ul>
-                        <li class="selected"><a href="#">Servicios</a></li>
-                        <li><a href="#">Pagos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                        <li><a href="#">Tema #</a></li>
-                        <li><a href="#">Tema #</a></li>
-                        <li><a href="#">Tema #</a></li>
-                        <li><a href="#">Tema #</a></li>
+                        <li class="selected" (click)="listaPreguntas('general')"><a >Generalidades</a></li>
+                        <li><a (click)="listaPreguntas('fiscal')" >Fiscal y contable</a></li>
+                        <li><a (click)="listaPreguntas('pagos')" >Pagos y suscripción </a></li>
                     </ul>
                 </div>
             </div>
@@ -88,25 +84,15 @@
                 <div class="listaPreguntas">
                     <div id="menu">
                         <ul>
-                            <li><a href="#">¿Lorem ipsum dolor sit amet? +</a></li>
-                            <li><a href="#">¿Qué es DOCX360? - </a></li>
-                            <li><a href="#">¿Lorem ipsum dolor sit amet? +</a></li>
-                            <li><a href="#">¿Lorem ipsum dolor sit amet? + </a></li>
-                            <li><a href="#">¿Lorem ipsum dolor sit amet? +</a></li>
-                            <li><a href="#">¿Lorem ipsum dolor sit amet? +</a></li>
-                            <li><a href="#">¿Lorem ipsum dolor sit amet? +</a></li>
+                            <li *ngFor="let l of listapreguntas"><a (click)="seleccionarPregunta(l.id)" >{{l.pregunta}}</a></li>
+                            
                         </ul>
                     </div>
                 </div>
                 <div class="descripcioPregunta">
                     <div>
-                        <h4>¿Qué es DOCX360? </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore alias ad nisi perspiciatis
-                            eius quibusdam recusandae! Repellendus consequatur accusantium magni. Eligendi at quos
-                            dicta, vel magni dolorem laboriosam voluptates minus.Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Tempore alias ad nisi perspiciatis
-                            eius quibusdam recusandae! Repellendus consequatur accusantium magni. Eligendi at quos
-                            dicta, vel magni dolorem laboriosam voluptates minus.</p>
+                        <h4>{{tituloSeleccionado}} </h4>
+                        <p>{{contenidoSeleccionado}}</p>
                     </div>
                 </div>
             </div>
@@ -164,7 +150,7 @@
                             </div>
                             <div class="contacto">
                                 <img class="img-responsive" src="assets/img/phone3.png">
-                                <p>+57 123 1234567</p>
+                                <p>+(55) 5308 1018</p>
                             </div>
 
 
@@ -248,7 +234,7 @@
         </div>
         <div class="terceraParte">
             <div class="centro">
-                <p>2021 Todos los Derechos Reservados</p>
+                <p>© 2021 docx360. Todos los derechos reservados. Developed by Smartbis</p>
 
             </div>
         </div>
@@ -285,7 +271,7 @@
         </div>
         <div class="terceraParte">
             <div class="centro">
-               <p>2021 Todos los Derechos Reservados</p>
+               <p>© 2021 docx360. Todos los derechos reservados. Developed by Smartbis</p>
 
             </div>
         </div>

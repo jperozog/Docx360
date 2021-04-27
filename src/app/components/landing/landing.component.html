@@ -1,1 +1,903 @@
-<p>landing works!</p>
+<div class="contenedor">
+    <div class="barra-superior">
+        <div class="izquierda-derecha">
+            <div class="izquierda">
+                <div class="contacto">
+                    <img class="img-responsive" src="assets/img/Phone.png">
+                    <p>+(55) 5308 1018</p>
+                </div>
+                <div class="mail">
+                    <img class="img-responsive" src="assets/img/Mail.png">
+                    <p>hola@docx360.com</p>
+                </div>
+
+            </div>
+            <div class="derecha">
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/twitter.png">
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/facebook.png">
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/instagram.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="izquierda-derecha">
+            <div class="izquierda">
+                <div class="divLogo">
+                    <img class="img-responsive" src="assets/img/logo.png">
+                </div>
+
+            </div>
+            <div class="derecha">
+                <div id="menu">
+                    <input type="checkbox" id="check">
+
+                    <label for="check" class="checkbtn">
+                        <fa-icon [icon]="faBars"></fa-icon>
+                    </label>
+                    <ul>
+                        <li><a routerLink="/home">Home</a></li>
+                        <li><a routerLink="/precios">Precios</a></li>
+                        <li><a routerLink="/faq">Preguntas Frecuentes</a></li>
+                        <li><a routerLink="/terminos">Términos y Condiciones</a></li>
+                        <li><a routerLink="/contacto">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenido colunma">
+        <div class="divTitulo4">
+            <div class="textos">
+                <div class="titulo">
+                    <h2>Monitorea el desempeño fiscal y financiero de tu empresa en tiempo real. </h2>
+                </div>
+                <div class="subtitulos">
+                    <div class="divBoton">
+                        <div class="boton">
+                            <p>¡Me encanta! Quiero 30 días de prueba GRATIS</p>
+                            <p class="flecha">>></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video">
+                <h2>Esto es docX360...</h2>
+                <iframe height="300px"  src="https://www.youtube.com/embed/eR7l2rGbPHE"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+
+
+        </div>
+        <div class="franja">
+            <div class="textos">
+                <p>Ovidate de las discrepancias con el SAT y de los CFDI’s inválidos. Toda la solución bajo el mismo
+                    nombre, docx360.</p>
+            </div>
+            <div class="divBoton">
+                <div class="boton">
+                    <p>Acceder Ahora</p>
+                </div>
+            </div>
+        </div>
+        <div class="franja2">
+            <h2>¿Para quién es docX?</h2>
+        </div>
+        <div class="cuadros">
+            <div class="cuadro">
+                <img class="img-responsive" src="assets/img/imagen1.png">
+            </div>
+            <div class="cuadro2">
+                <h3>Altos Ejecutivos</h3>
+                <p>Control total. En solo un vistazo sabrás todo lo que está pasando fiscal y financieramente en tu
+                    empresa. Realiza auditorías silenciosas a tu equipo contable, identifica proveedores en listas
+                    negras, visualiza claramente tu nómina, asimilables a salarios y honorarios. Y mucho más.
+                    <b>Tomar
+                        decisiones inteligentes nunca había sido tan fácil.</b>
+                </p>
+            </div>
+            <div class="cuadro2 cuarto">
+                <h3>Contadores</h3>
+                <p>Optimiza tus tiempos de trabajo al máximo. Visualiza, cruza y valida cualquier CFDI en segundos.
+                    Además, genera reportes por prioridad o volumen y obtén los acumulados de las percepciones y
+                    deducciones de cada trabajador y la base de cálculo de impuestos sobre la nómina (incluyendo el
+                    ISR). <b>La satisfacción de tus clientes está garantizada.</b></p>
+            </div>
+            <div class="cuadro tercero">
+                <img class="img-responsive" src="assets/img/imagen2.png">
+            </div>
+            <div class="cuadro">
+                <img class="img-responsive" src="assets/img/imagen3.png">
+            </div>
+            <div class="cuadro2">
+                <h3>Freelancers</h3>
+                <p>La historica complejidad del SAT es cosa del pasado. La simpleza de docX360 vuelve la monitorización
+                    fiscal una tarea simple. Lleva el control de tus ingresos y egresos, traslados de IVA y flujos de
+                    efectivo <b>en un mismo lugar y como un experto.</b></p>
+            </div>
+        </div>
+        <carousel [cellsToShow]="1" [height]="640">
+            <div class="carousel-cell tips">
+                <div class="fondo">
+                    <h2>¿Cómo iniciar con docX360?</h2>
+                    <div class="contenidoTips">
+                        <div class="lista">
+                            <p>#</p>
+                            <div id="menu">
+                                <ul>
+                                    <li><a class="selected">Accede</a></li>
+                                    <li><a>Registrate</a></li>
+                                    <li><a>Sincronización</a></li>
+                                    <li><a>Prueba</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mensaje">
+                            <h2>Accede a tu Prueba Gratuita.</h2>
+                            <div class="divBoton">
+                                <div class="boton">
+                                    <p>¡Quiero 30 Días Gratis!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pasos">
+                        <div class="flecha1">
+                            <p>
+                                < </p>
+                        </div>
+                        <div class="texto">
+                            <p class="titulo">Accede</p>
+                            <p>Paso 1</p>
+                        </div>
+                        <div class="flecha2">
+                            <p>></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <div class="blanca">
+                        <h2>¿Qué estás esperando?</h2>
+                        <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
+                            llevar las finanzas.</p>
+                        <div class="divBoton">
+                            <div class="boton">
+                                <p>¡Quiero 30 Días Gratis!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="morada">
+                        <p class="pasos">Paso 1</p>
+                        <h2>Cero Riesgo</h2>
+                        <p>Todos nuestros planes cuentan con 30 días de garantía para que puedas probar los grandes
+                            beneficios de usar docX360.</p>
+                        <div class="docx360">
+                            <p>docx360</p>
+                            <div class="flechas">
+                                <p>
+                                    < </p>
+                                        <p>></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell tips">
+                <div class="fondo">
+                    <h2>¿Cómo iniciar con docX360?</h2>
+                    <div class="contenidoTips">
+                        <div class="lista">
+                            <p>#</p>
+                            <div id="menu">
+                                <ul>
+                                    <li><a >Accede</a></li>
+                                    <li><a class="selected">Registrate</a></li>
+                                    <li><a>Sincronización</a></li>
+                                    <li><a>Prueba</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mensaje">
+                            <h2>Completa el Formulario de Registro.</h2>
+                            <img class="img-responsive" src="assets/img/paso2.png">
+                        </div>
+                    </div>
+                    <div class="pasos">
+                        <div class="flecha1">
+                            <p>
+                                < </p>
+                        </div>
+                        <div class="texto">
+                            <p class="titulo">Registrate</p>
+                            <p>Paso 2</p>
+                        </div>
+                        <div class="flecha2">
+                            <p>></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <div class="blanca">
+                        <h2>¿Qué estás esperando?</h2>
+                        <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
+                            llevar las finanzas.</p>
+                        <img src="" alt="">
+                    </div>
+                    <div class="morada">
+                        <p class="pasos">Paso 2</p>
+                        <h2>Práctico</h2>
+                        <p>Hemos diseñado la plataforma para que se fácil, práctica e intuitiva para cualquier persona
+                            sin importar su perfil profesional.</p>
+                        <div class="docx360">
+                            <p>docx360</p>
+                            <div class="flechas">
+                                <p>
+                                    < </p>
+                                        <p>></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell tips">
+                <div class="fondo">
+                    <h2>¿Cómo iniciar con docX360?</h2>
+                    <div class="contenidoTips">
+                        <div class="lista">
+                            <p>#</p>
+                            <div id="menu">
+                                <ul>
+                                    <li><a>Accede</a></li>
+                                    <li><a>Registrate</a></li>
+                                    <li><a class="selected">Sincronización</a></li>
+                                    <li><a>Prueba</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mensaje">
+                            <h2>Sincronización de tu Cuenta con el SAT en Menos de 24 hrs.</h2>
+                            <img class="img-responsive" src="assets/img/paso3.png">
+                        </div>
+                    </div>
+                    <div class="pasos">
+                        <div class="flecha1">
+                            <p>
+                                < </p>
+                        </div>
+                        <div class="texto">
+                            <p class="titulo">Sincronización</p>
+                            <p>Paso 3</p>
+                        </div>
+                        <div class="flecha2">
+                            <p>></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <div class="blanca">
+                        <h2>¿Qué estás esperando?</h2>
+                        <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
+                            llevar las finanzas.</p>
+                        <div class="divBoton">
+                            <div class="boton">
+                                <p>¡Quiero 30 Días Gratis!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="morada">
+                        <p class="pasos">Paso 3</p>
+                        <h2>Modular</h2>
+                        <p>Utiliza los recursos y herramientas que necesites, cuando las necesites. Se acabaron las
+                            funciones innecesarias con grandes costos.</p>
+                        <div class="docx360">
+                            <p>docx360</p>
+                            <div class="flechas">
+                                <p>
+                                    < </p>
+                                        <p>></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-cell tips">
+                <div class="fondo">
+                    <h2>¿Cómo iniciar con docX360?</h2>
+                    <div class="contenidoTips">
+                        <div class="lista">
+                            <p>#</p>
+                            <div id="menu">
+                                <ul>
+                                    <li><a >Accede</a></li>
+                                    <li><a>Registrate</a></li>
+                                    <li><a>Sincronización</a></li>
+                                    <li><a class="selected">Prueba</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mensaje">
+                            <h2>Prueba docX360 y Toma las Mejores Decisiones Financieras.</h2>
+                            <img class="img-responsive" src="assets/img/paso4.png">
+                        </div>
+                    </div>
+                    <div class="pasos">
+                        <div class="flecha1">
+                            <p>
+                                < </p>
+                        </div>
+                        <div class="texto">
+                            <p class="titulo">Disfruta</p>
+                            <p>Paso 4</p>
+                        </div>
+                        <div class="flecha2">
+                            <p>></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjetas">
+                    <div class="blanca">
+                        <h2>¿Qué estás esperando?</h2>
+                        <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
+                            llevar las finanzas.</p>
+                        <div class="divBoton">
+                            <div class="boton">
+                                <p>¡Quiero 30 Días Gratis!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="morada">
+                        <p class="pasos">Paso 4</p>
+                        <h2>Todo en Mismo Lugar</h2>
+                        <p>Es momento de dejar atrás la pérdida de comprobantes, documentos y reportes importantes. Con
+                            docX360 perder información es cosa del pasado.</p>
+                        <div class="docx360">
+                            <p>docx360</p>
+                            <div class="flechas">
+                                <p>
+                                    < </p>
+                                        <p>></p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </carousel>
+        <div class="franja2">
+            <h2>¿Para quién es docX?</h2>
+        </div>
+        <div class="cuadros2">
+            <div class="cuadro">
+                <img class="img-responsive" src="assets/img/ingreso.png">
+                <h3>Ingresos y Gastos</h3>
+                <p>Visualiza todo el detalle de tus clientes y proveedores, monitorea el flujo de efectivo y mantén
+                    siempre la rastreabilidad de todas tus operaciones.
+                </p>
+            </div>
+            <div class="cuadro">
+                <img class="img-responsive" src="assets/img/espejo.png">
+                <h3>Somos un Espejo del SAT</h3>
+                <p>Analiza el comportamiento de tus impuestos, válida y cruza cualquier CFDI, detecta discrepancias
+                    fiscales y proveedores en listas negras. ¡Provisiona a tu favor!
+                </p>
+            </div>
+            <div class="cuadro">
+                <img class="img-responsive" src="assets/img/control.png">
+                <h3>Control Total</h3>
+                <p>Información verídica y precisa en tiempo real. Lleva a cabo auditorías silenciosas a tu equipo de
+                    contabilidad, válida y compara con lo “real”, y genera tus propios reportes al instante.
+                </p>
+            </div>
+            <div class="cuadro">
+                <img class="img-responsive" src="assets/img/tecno.png">
+                <h3>Tecnología en la nube</h3>
+                <p>Nuestra plataforma se encuentra alojada en la nube. Así, vayas a donde vayas podrás acceder a tu
+                    cuenta de DocX360 desde cualquier dispositivo.
+                </p>
+            </div>
+            <div class="cuadro">
+                <img class="img-responsive" src="assets/img/costo.png">
+                <h3>Low cost</h3>
+                <p>La relación costo - beneficio de docx360 nos vuelve la inversión más inteligente para la
+                    monitorización de las finanzas empresariales.
+                </p>
+            </div>
+            <div class="cuadro">
+                <img class="img-responsive" src="assets/img/interfaz.png">
+                <h3>Interfaz Intuitiva</h3>
+                <p>No necesitas ningún conocimiento de contabilidad o finanzas para entender y administrar nuestra
+                    interfaz. ¡Podrás generar reportes en un sólo click!
+                </p>
+            </div>
+
+
+        </div>
+        <div class="divTitulo3">
+            <div class="titulo">
+                <h1 class="color">¡Accede Ahora Al Mejor Precio!</h1>
+            </div>
+            <div class="planes">
+                <div (click)="selecionarTipoPlan('mensual')" class="plan selected">MENSUAL</div>
+                <div (click)="selecionarTipoPlan('anual')" class="plan2">ANUAL</div>
+            </div>
+
+            <div class="tarjetasPlanes">
+                <div class="descripcion">
+                    <p>Documentos</p>
+                    <p>30 Días de Prueba</p>
+                    <p>Data en Tiempo Real</p>
+                    <p>Visualización de Gráficos</p>
+                    <p>Reportes en un Click</p>
+                    <p>Soporte al Cliente</p>
+                </div>
+                <div class="personal">
+                    <h3>Personal</h3>
+                    <div class="precio">
+                        <h1>{{precioPersonal}}</h1>
+                        <p *ngIf="mensual">al mes</p>
+                        <p *ngIf="mensual == false">al año</p>
+                    </div>
+                    <select>
+                        <option *ngFor="let c of cantidadPersonal" [value]="c.precio">{{c.cantidad}}</option>
+                    </select>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="divBoton">
+                        <div class="boton">
+                            <p>¡Quiero mis 30 Días Gratis!</p>
+                            <p class="flecha">>></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal">
+                    <h3>Pequeña</h3>
+                    <div class="precio">
+                        <h1>{{precioPequena}}</h1>
+                        <p *ngIf="mensual">al mes</p>
+                        <p *ngIf="mensual == false">al año</p>
+                    </div>
+                    <select (change)="cambiarCantidadPequena()" [(ngModel)]="cantidadPequenaSelected">
+                        <option *ngFor="let c of cantidadPequena" [value]="c.cantidad">{{c.cantidad}}</option>
+                    </select>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="divBoton">
+                        <div class="boton">
+                            <p>¡Quiero mis 30 Días Gratis!</p>
+                            <p class="flecha">>></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal">
+                    <h3>Mediana</h3>
+                    <div class="precio">
+                        <h1>{{precioMediana}}</h1>
+                        <p *ngIf="mensual">al mes</p>
+                        <p *ngIf="mensual == false">al año</p>
+                    </div>
+                    <select (change)="cambiarCantidadMediana()" [(ngModel)]="cantidadMedianaSelected">
+                        <option selected *ngFor="let c of cantidadMediana" [value]="c.cantidad">{{c.cantidad}}</option>
+                    </select>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="divBoton">
+                        <div class="boton">
+                            <p>¡Quiero mis 30 Días Gratis!</p>
+                            <p class="flecha">>></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="tarjetasPlanes2">
+                <div class="personal">
+                    <h3>Personal</h3>
+                    <div class="precio">
+                        <h1>{{precioPersonal}}</h1>
+                        <p *ngIf="mensual">al mes</p>
+                        <p *ngIf="mensual == false">al año</p>
+                    </div>
+                    <div class="check">
+                        <p>Documentos</p>
+                        <select>
+                            <option *ngFor="let c of cantidadPersonal" [value]="c.precio">{{c.cantidad}}</option>
+                        </select>
+                    </div>
+                    <div class="check">
+                        <p>30 Días de Prueba</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Data en Tiempo Real</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Visualización de Gráficos</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Reportes en un Click</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Soporte al Cliente</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="divBoton">
+                        <div class="boton">
+                            <p>¡Quiero mis 30 Días Gratis!</p>
+                            <p class="flecha">>></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal">
+                    <h3>Pequeña</h3>
+                    <div class="precio">
+                        <h1>{{precioPequena}}</h1>
+                        <p *ngIf="mensual">al mes</p>
+                        <p *ngIf="mensual == false">al año</p>
+                    </div>
+                    <div class="check">
+                        <p>Documentos</p>
+                        <select (change)="cambiarCantidadPequena()" [(ngModel)]="cantidadPequenaSelected">
+                            <option *ngFor="let c of cantidadPequena" [value]="c.cantidad">{{c.cantidad}}</option>
+                        </select>
+                    </div>
+                    <div class="check">
+                        <p>30 Días de Prueba</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Data en Tiempo Real</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Visualización de Gráficos</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Reportes en un Click</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Soporte al Cliente</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="divBoton">
+                        <div class="boton">
+                            <p>¡Quiero mis 30 Días Gratis!</p>
+                            <p class="flecha">>></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="personal">
+                    <h3>Mediana</h3>
+                    <div class="precio">
+                        <h1>{{precioMediana}}</h1>
+                        <p *ngIf="mensual">al mes</p>
+                        <p *ngIf="mensual == false">al año</p>
+                    </div>
+                    <div class="check">
+                        <p>Documentos</p>
+                        <select (change)="cambiarCantidadMediana()" [(ngModel)]="cantidadMedianaSelected">
+                            <option selected *ngFor="let c of cantidadMediana" [value]="c.cantidad">{{c.cantidad}}
+                            </option>
+                        </select>
+                    </div>
+                    <div class="check">
+                        <p>30 Días de Prueba</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Data en Tiempo Real</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Visualización de Gráficos</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Reportes en un Click</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="check">
+                        <p>Soporte al Cliente</p>
+                        <img class="img-responsive" src="assets/img/check.png">
+                    </div>
+                    <div class="divBoton">
+                        <div class="boton">
+                            <p>¡Quiero mis 30 Días Gratis!</p>
+                            <p class="flecha">>></p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+        <div class="divParrafo">
+            <div class="titulo precio">
+                <h1>Preguntas Frecuentes</h1>
+            </div>
+            <div class="parrafo">
+                <div id="menu">
+                    <ul>
+                        <li class="selected" (click)="listaPreguntas('general')"><a>Generalidades</a></li>
+                        <li><a (click)="listaPreguntas('fiscal')">Fiscal y contable</a></li>
+                        <li><a (click)="listaPreguntas('pagos')">Pagos y suscripción </a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="preguntas">
+                <div class="listaPreguntas">
+                    <div id="menu">
+                        <ul>
+                            <li *ngFor="let l of listapreguntas"><a
+                                    (click)="seleccionarPregunta(l.id)">{{l.pregunta}}</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="descripcioPregunta">
+                    <div>
+                        <h4>{{tituloSeleccionado}} </h4>
+                        <p>{{contenidoSeleccionado}}</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="divGarantia">
+                <div class="garantia">
+                    <h1>Garantía de docX:</h1>
+                    <p>Todos nuestros planes de suscripción incluyen una</p>
+                    <p class="color">garantía de 30 días gratis de prueba, no se requiere tarjeta.</p>
+                </div>
+                <div class="img">
+                    <img class="img-responsive" src="assets/img/bro.png">
+                </div>
+                <div class="texto">
+                    <p>Si por cualquier motivo, docx360 no cumple con tus expectativas, puedes cancelar tu suscripción
+                        dentro de los</p>
+                    <p class="color">primeros 30 días.</p>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="divSlider">
+            <h2>Opiniones de Nuestros Clientes</h2>
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="slide slide_1">
+                                <div class="slide-content">
+                                    <img class="img-responsive" src="assets/img/user.png">
+                                    <p>Me encantó ver, al instante, los clientes y proveedores que están en las listas
+                                        negras del SAT. Con docX360 es súper fácil. Raúl Ramo</p>
+                                    <p class="autor">Director General
+                                    </p>
+                                    <p class="autor">Gefrieren S.A.</p>
+                                </div>
+                            </div>
+                            <div class="slide slide_2">
+                                <div class="slide-content">
+                                    <img class="img-responsive" src="assets/img/user.png">
+                                    <p>Ahora tengo una película mucho mas clara y en Fempo real de las empresas que
+                                        administro. Con docX360 ubico cualquier diferencia o discrepancia en los
+                                        ingresos y egresos. Incluso se, cuanto traemos en cuentas X cobrar y pagar.</p>
+                                    <p class="autor">Javier Marinez
+                                    </p>
+                                    <p class="autor">CP Suministros</p>
+                                </div>
+                            </div>
+                            <div class="slide slide_3">
+                                <div class="slide-content">
+                                    <img class="img-responsive" src="assets/img/user.png">
+                                    <p>Todos decimos conocer nuestra operación, hasta que aparece una invitación en
+                                        nuestro buzón del SAT. Con docX360 realmente tengo el control; puedo tomar
+                                        decisiones al instante. El año pasado pude planear el cierre fiscal a mi favor.
+                                    </p>
+                                    <p class="autor">Maru Munguía
+                                    </p>
+                                    <p class="autor">CEO TechBoard SAS</p>
+                                </div>
+                            </div>
+                            <div class="slide slide_4">
+                                <div class="slide-content">
+                                    <img class="img-responsive" src="assets/img/user.png">
+                                    <p>Un reporte que tomaba semanas, para presupuestar nuestro gasto nominal, hoy lo
+                                        obtengo de inmediato con docX360.</p>
+                                    <p class="autor">Lilia Flores
+                                    </p>
+                                    <p class="autor">
+                                        Nómina SHF
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+                <div id="bullets">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+    <div class="footer">
+        <div class="primeraParte">
+            <div class="izquierda">
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/twitter.png">
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/facebook.png">
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/instagram.png">
+                </div>
+
+            </div>
+            <div class="centro">
+                <img class="img-responsive" src="assets/img/logo.png">
+            </div>
+            <div class="derecha">
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/Paypal.png">
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/Visa.png">
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/American_Express.png">
+                </div>
+            </div>
+        </div>
+        <div class="segundaParte">
+            <div class="centro">
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/mail2.png">
+                    <p>Email</p>
+                    <p>hola@docx360.com</p>
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/facebook2.png">
+                    <p>Facebook</p>
+                    <p>docx360</p>
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/phone2.png">
+                    <p>Teléfono</p>
+                    <p>+57 123-1234567</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="terceraParte">
+            <div class="centro">
+                <p>© 2021 docx360. Todos los derechos reservados. Developed by Smartbis</p>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer2">
+        <div class="primeraParte">
+
+            <div class="centro">
+                <img class="img-responsive" src="assets/img/logo.png">
+            </div>
+
+        </div>
+        <div class="segundaParte">
+            <div class="centro">
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/mail2.png">
+                    <p>Email</p>
+                    <p>hola@docx360.com</p>
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/facebook2.png">
+                    <p>Facebook</p>
+                    <p>docx360</p>
+                </div>
+                <div class="social">
+                    <img class="img-responsive" src="assets/img/phone2.png">
+                    <p>Teléfono</p>
+                    <p>+57 123-1234567</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="terceraParte">
+            <div class="centro">
+                <p>© 2021 docx360. Todos los derechos reservados. Developed by Smartbis</p>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
