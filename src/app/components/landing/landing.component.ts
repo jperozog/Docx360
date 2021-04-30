@@ -293,15 +293,35 @@ export class LandingComponent implements OnInit {
     }
   }
 
-  seleccionarPregunta(id: number) {
+  seleccionarPregunta(id:number){
 
-    this.listapreguntas.forEach((e: any) => {
-      if (e["id"] == id) {
-        this.tituloSeleccionado = e["pregunta"]
-        this.contenidoSeleccionado = e["contenido"]
-      }
+
+    
+    this.listapreguntas.forEach((e:any) => {
+        if (e["id"] == id) {
+          this.tituloSeleccionado = e["pregunta"]
+          this.contenidoSeleccionado = e["contenido"]
+
+          let selected = document.getElementById(e["id"].toString());
+
+          let a = e["id"] + 100;
+
+          let selected2 = document.getElementById(a.toString());
+
+          selected?.setAttribute("style", "padding-left:1%; padding-right:1%;    box-shadow: rgba(22, 27, 29, 0.25) 0px 4px 16px;border-radius:5px; margin-top:1%;");
+          selected2?.setAttribute("style", "color:#01A0E2");
+        }else{
+          let selected = document.getElementById(e["id"].toString());
+
+          let a = e["id"] + 100;
+
+          let selected2 = document.getElementById(a.toString());
+
+          selected?.setAttribute("style", "padding-left:0; padding-right:0;    box-shadow: none;border-radius:0 px;margin-top:0 %; ");
+          selected2?.setAttribute("style", "color:gray");
+        }
     });
-
+    
   }
 
   selecionarTipoPlan(tipo_plan: string) {

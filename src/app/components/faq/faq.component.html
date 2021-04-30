@@ -8,19 +8,20 @@
                 </div>
                 <div class="mail">
                     <img class="img-responsive" src="assets/img/Mail.png">
-                    <p>hola@docx360.com</p>
+                    <p>sos@docx360.com</p>
                 </div>
 
             </div>
             <div class="derecha">
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/twitter.png">
+                    <a href="https://es-la.facebook.com/docX360/">
+                        <img class="img-responsive" src="assets/img/facebook.png">
+                    </a>
                 </div>
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/facebook.png">
-                </div>
-                <div class="social">
-                    <img class="img-responsive" src="assets/img/instagram.png">
+                    <a href="">
+                        <img class="img-responsive" src="assets/img/instagram.png">
+                    </a>
                 </div>
             </div>
         </div>
@@ -44,9 +45,10 @@
                     <ul>
                         <li><a routerLink="/home">Home</a></li>
                         <li><a routerLink="/precios">Precios</a></li>
-                        <li><a routerLink="/faq">Preguntas Frecuentes</a></li>
-                        <li><a routerLink="/terminos">Términos y Condiciones</a></li>
+                        <li><a  class="selected" routerLink="/faq">Preguntas Frecuentes</a></li>
                         <li><a routerLink="/contacto">Contáctanos</a></li>
+                        <li><a routerLink="/">Ingresar</a></li>
+                        <li><a routerLink="/registro">Registrarse</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,7 +86,7 @@
                 <div class="listaPreguntas">
                     <div id="menu">
                         <ul>
-                            <li *ngFor="let l of listapreguntas"><a (click)="seleccionarPregunta(l.id)" >{{l.pregunta}}</a></li>
+                            <li *ngFor="let l of listapreguntas" id="{{l.id}}"><a id="{{l.id+100}}" (click)="seleccionarPregunta(l.id)" >{{l.pregunta}}</a></li>
                             
                         </ul>
                     </div>
@@ -131,7 +133,7 @@
                         <textarea name="" placeholder="¿Cómo te podemos ayudar?" id="" cols="30" rows="5"></textarea>
                     </div>
                     <div class="divBoton">
-                        <div class="boton">
+                        <div (click)="enviarMensaje()" class="boton">
                             <p>Enviar Mensaje</p>
                             <p class="flecha">>></p>
                         </div>
@@ -146,7 +148,7 @@
                         <div class="segundaParte">
                             <div class="mail">
                                 <img class="img-responsive" src="assets/img/mail4.png">
-                                <p>hola@docx360.com</p>
+                                <p>sos@docx360.com</p>
                             </div>
                             <div class="contacto">
                                 <img class="img-responsive" src="assets/img/phone3.png">
@@ -157,10 +159,7 @@
                         </div>
                         <div class="terceraParte">
                             <div class="social">
-                                <img class="img-responsive" src="assets/img/Instagram2.png">
-                            </div>
-                            <div class="social">
-                                <img class="img-responsive" src="assets/img/Whatsapp.png">
+                                <img class="img-responsive" src="assets/img/facebook.png">
                             </div>
                             <div class="social">
                                 <img class="img-responsive" src="assets/img/Twitter2.png">
@@ -187,13 +186,14 @@
         <div class="primeraParte">
             <div class="izquierda">
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/twitter.png">
+                    <a href="https://es-la.facebook.com/docX360/">
+                        <img class="img-responsive" src="assets/img/facebook.png">
+                    </a>
                 </div>
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/facebook.png">
-                </div>
-                <div class="social">
-                    <img class="img-responsive" src="assets/img/instagram.png">
+                    <a href="">
+                        <img class="img-responsive" src="assets/img/instagram.png">
+                    </a>
                 </div>
 
             </div>
@@ -213,11 +213,12 @@
             </div>
         </div>
         <div class="segundaParte">
+            <a routerLink="/terminos">Términos y Condiciones</a>
             <div class="centro">
                 <div class="social">
                     <img class="img-responsive" src="assets/img/mail2.png">
                     <p>Email</p>
-                    <p>hola@docx360.com</p>
+                    <p>sos@docx360.com</p>
                 </div>
                 <div class="social">
                     <img class="img-responsive" src="assets/img/facebook2.png">
@@ -254,7 +255,7 @@
                 <div class="social">
                     <img class="img-responsive" src="assets/img/mail2.png">
                     <p>Email</p>
-                    <p>hola@docx360.com</p>
+                    <p>sos@docx360.com</p>
                 </div>
                 <div class="social">
                     <img class="img-responsive" src="assets/img/facebook2.png">

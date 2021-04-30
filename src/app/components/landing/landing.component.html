@@ -8,19 +8,20 @@
                 </div>
                 <div class="mail">
                     <img class="img-responsive" src="assets/img/Mail.png">
-                    <p>hola@docx360.com</p>
+                    <p>sos@docx360.com</p>
                 </div>
 
             </div>
             <div class="derecha">
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/twitter.png">
+                    <a href="https://es-la.facebook.com/docX360/">
+                        <img class="img-responsive" src="assets/img/facebook.png">
+                    </a>
                 </div>
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/facebook.png">
-                </div>
-                <div class="social">
-                    <img class="img-responsive" src="assets/img/instagram.png">
+                    <a href="">
+                        <img class="img-responsive" src="assets/img/instagram.png">
+                    </a>
                 </div>
             </div>
         </div>
@@ -42,11 +43,12 @@
                         <fa-icon [icon]="faBars"></fa-icon>
                     </label>
                     <ul>
-                        <li><a routerLink="/home">Home</a></li>
+                        <li><a class="selected" routerLink="/home">Home</a></li>
                         <li><a routerLink="/precios">Precios</a></li>
                         <li><a routerLink="/faq">Preguntas Frecuentes</a></li>
-                        <li><a routerLink="/terminos">Términos y Condiciones</a></li>
                         <li><a routerLink="/contacto">Contáctanos</a></li>
+                        <li><a routerLink="/">Ingresar</a></li>
+                        <li><a routerLink="/registro">Registrarse</a></li>
                     </ul>
                 </div>
             </div>
@@ -61,7 +63,7 @@
                 </div>
                 <div class="subtitulos">
                     <div class="divBoton">
-                        <div class="boton">
+                        <div routerLink="/registro" class="boton">
                             <p>¡Me encanta! Quiero 30 días de prueba GRATIS</p>
                             <p class="flecha">>></p>
                         </div>
@@ -71,8 +73,8 @@
 
             <div class="video">
                 <h2>Esto es docX360...</h2>
-                <iframe height="300px"  src="https://www.youtube.com/embed/eR7l2rGbPHE"
-                    title="YouTube video player" frameborder="0"
+                <iframe height="300px" src="https://www.youtube.com/embed/eR7l2rGbPHE" title="YouTube video player"
+                    frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
@@ -145,7 +147,7 @@
                         <div class="mensaje">
                             <h2>Accede a tu Prueba Gratuita.</h2>
                             <div class="divBoton">
-                                <div class="boton">
+                                <div routerLink="/registro" class="boton">
                                     <p>¡Quiero 30 Días Gratis!</p>
                                 </div>
                             </div>
@@ -201,7 +203,7 @@
                             <p>#</p>
                             <div id="menu">
                                 <ul>
-                                    <li><a >Accede</a></li>
+                                    <li><a>Accede</a></li>
                                     <li><a class="selected">Registrate</a></li>
                                     <li><a>Sincronización</a></li>
                                     <li><a>Prueba</a></li>
@@ -232,7 +234,11 @@
                         <h2>¿Qué estás esperando?</h2>
                         <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
                             llevar las finanzas.</p>
-                        <img src="" alt="">
+                        <div class="divBoton">
+                            <div class="boton">
+                                <p>¡Quiero 30 Días Gratis!</p>
+                            </div>
+                        </div>
                     </div>
                     <div class="morada">
                         <p class="pasos">Paso 2</p>
@@ -321,7 +327,7 @@
                             <p>#</p>
                             <div id="menu">
                                 <ul>
-                                    <li><a >Accede</a></li>
+                                    <li><a>Accede</a></li>
                                     <li><a>Registrate</a></li>
                                     <li><a>Sincronización</a></li>
                                     <li><a class="selected">Prueba</a></li>
@@ -446,7 +452,7 @@
                 <div class="personal">
                     <h3>Personal</h3>
                     <div class="precio">
-                        <h1>{{precioPersonal}}</h1>
+                        <h1>${{precioPersonal}}</h1>
                         <p *ngIf="mensual">al mes</p>
                         <p *ngIf="mensual == false">al año</p>
                     </div>
@@ -469,7 +475,7 @@
                         <img class="img-responsive" src="assets/img/check.png">
                     </div>
                     <div class="divBoton">
-                        <div class="boton">
+                        <div routerLink="/registro" class="boton">
                             <p>¡Quiero mis 30 Días Gratis!</p>
                             <p class="flecha">>></p>
                         </div>
@@ -479,7 +485,7 @@
                 <div class="personal">
                     <h3>Pequeña</h3>
                     <div class="precio">
-                        <h1>{{precioPequena}}</h1>
+                        <h1>${{precioPequena}}</h1>
                         <p *ngIf="mensual">al mes</p>
                         <p *ngIf="mensual == false">al año</p>
                     </div>
@@ -502,7 +508,7 @@
                         <img class="img-responsive" src="assets/img/check.png">
                     </div>
                     <div class="divBoton">
-                        <div class="boton">
+                        <div routerLink="/registro" class="boton">
                             <p>¡Quiero mis 30 Días Gratis!</p>
                             <p class="flecha">>></p>
                         </div>
@@ -512,7 +518,7 @@
                 <div class="personal">
                     <h3>Mediana</h3>
                     <div class="precio">
-                        <h1>{{precioMediana}}</h1>
+                        <h1>${{precioMediana}}</h1>
                         <p *ngIf="mensual">al mes</p>
                         <p *ngIf="mensual == false">al año</p>
                     </div>
@@ -535,7 +541,7 @@
                         <img class="img-responsive" src="assets/img/check.png">
                     </div>
                     <div class="divBoton">
-                        <div class="boton">
+                        <div routerLink="/registro" class="boton">
                             <p>¡Quiero mis 30 Días Gratis!</p>
                             <p class="flecha">>></p>
                         </div>
@@ -580,7 +586,7 @@
                         <img class="img-responsive" src="assets/img/check.png">
                     </div>
                     <div class="divBoton">
-                        <div class="boton">
+                        <div routerLink="/registro" class="boton">
                             <p>¡Quiero mis 30 Días Gratis!</p>
                             <p class="flecha">>></p>
                         </div>
@@ -621,7 +627,7 @@
                         <img class="img-responsive" src="assets/img/check.png">
                     </div>
                     <div class="divBoton">
-                        <div class="boton">
+                        <div routerLink="/registro" class="boton">
                             <p>¡Quiero mis 30 Días Gratis!</p>
                             <p class="flecha">>></p>
                         </div>
@@ -663,7 +669,7 @@
                         <img class="img-responsive" src="assets/img/check.png">
                     </div>
                     <div class="divBoton">
-                        <div class="boton">
+                        <div routerLink="/registro" class="boton">
                             <p>¡Quiero mis 30 Días Gratis!</p>
                             <p class="flecha">>></p>
                         </div>
@@ -695,8 +701,9 @@
                 <div class="listaPreguntas">
                     <div id="menu">
                         <ul>
-                            <li *ngFor="let l of listapreguntas"><a
-                                    (click)="seleccionarPregunta(l.id)">{{l.pregunta}}</a></li>
+                            <li *ngFor="let l of listapreguntas" id="{{l.id}}">
+                                <a id="{{l.id+100}}" (click)="seleccionarPregunta(l.id)">{{l.pregunta}}</a>
+                            </li>
 
                         </ul>
                     </div>
@@ -725,6 +732,12 @@
                 </div>
             </div>
 
+            <div class="divBoton">
+                <div routerLink="/registro" class="boton">
+                    <p>¡Me encanta! Quiero 30 días de prueba GRATIS</p>
+                    <p class="flecha">>></p>
+                </div>
+            </div>
 
         </div>
         <div class="divSlider">
@@ -809,13 +822,14 @@
         <div class="primeraParte">
             <div class="izquierda">
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/twitter.png">
+                    <a href="https://es-la.facebook.com/docX360/">
+                        <img class="img-responsive" src="assets/img/facebook.png">
+                    </a>
                 </div>
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/facebook.png">
-                </div>
-                <div class="social">
-                    <img class="img-responsive" src="assets/img/instagram.png">
+                    <a href="">
+                        <img class="img-responsive" src="assets/img/instagram.png">
+                    </a>
                 </div>
 
             </div>
@@ -835,11 +849,12 @@
             </div>
         </div>
         <div class="segundaParte">
+            <a routerLink="/terminos">Términos y Condiciones</a>
             <div class="centro">
                 <div class="social">
                     <img class="img-responsive" src="assets/img/mail2.png">
                     <p>Email</p>
-                    <p>hola@docx360.com</p>
+                    <p>sos@docx360.com</p>
                 </div>
                 <div class="social">
                     <img class="img-responsive" src="assets/img/facebook2.png">
@@ -876,7 +891,7 @@
                 <div class="social">
                     <img class="img-responsive" src="assets/img/mail2.png">
                     <p>Email</p>
-                    <p>hola@docx360.com</p>
+                    <p>sos@docx360.com</p>
                 </div>
                 <div class="social">
                     <img class="img-responsive" src="assets/img/facebook2.png">
