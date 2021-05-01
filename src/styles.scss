@@ -48,10 +48,11 @@
                     img{
                         width: 10%;
                     }  
-                    p{
+                    a{
                         color: white;
                         font-size: 14px;
                         font-weight: 400;
+                        text-decoration: none;
                     }
                 }
                  
@@ -68,14 +69,14 @@
                     align-items: center;
                     flex-direction: row;
                     justify-content: center;
-                    width: 30%;
+                    width: 15%;
                     a{
                         display: flex;
                         align-items: center;
                         flex-direction: row;
                         justify-content: center;
                         img{
-                            width: 50%;
+                            width: 60%;
                         }  
         
                     }
