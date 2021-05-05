@@ -1,13 +1,19 @@
 import { Component, OnInit } from '@angular/core';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+declare var myScript: any;
+declare var myScript2: any;
+declare var myScript3: any;
+
 @Component({
   selector: 'app-landing',
   templateUrl: './landing.component.html',
   styleUrls: ['./landing.component.scss']
 })
 export class LandingComponent implements OnInit {
-
+  instanceLib: any;
+  instanceLib2: any;
+  instanceLib3: any;
   faBars = faBars;
   listapreguntas: any = []
   listaplanes: any = []
@@ -275,7 +281,21 @@ export class LandingComponent implements OnInit {
     });
 
     this.seleccionarPrecio()
+    let selected = document.getElementById("mensual");
+    let selected2 = document.getElementById("anual");
 
+
+        selected?.setAttribute("style", "background-color: #01A0E2; color: white; border: none; box-shadow: rgba(22, 27, 29, 0.25) 0px 4px 16px;");
+        selected2?.setAttribute("style", "border: 1px solid black;padding: 5% 60%;cursor: pointer;");
+
+    this.instanceLib = myScript();
+    this.instanceLib.mostrarScroll();
+
+    this.instanceLib2 = myScript2();
+    this.instanceLib2.mostrarScroll2();
+
+    this.instanceLib3 = myScript3();
+    this.instanceLib3.mostrarScroll3();
 
   }
 
@@ -329,13 +349,30 @@ export class LandingComponent implements OnInit {
       this.listaplanes = this.mensuales
       this.mensual = true
       this.tipoPlanSelected = 1
+
+      let selected = document.getElementById("mensual");
+      let selected2 = document.getElementById("anual");
+
+
+          selected?.setAttribute("style", "background-color: #01A0E2; color: white; border: none; box-shadow: rgba(22, 27, 29, 0.25) 0px 4px 16px;");
+          selected2?.setAttribute("style", "border: 1px solid black;padding: 5% 60%;cursor: pointer;");
+
     } else {
       this.listaplanes = this.anuales
       this.mensual = false
       this.tipoPlanSelected = 2
+
+      let selected = document.getElementById("mensual");
+      let selected2 = document.getElementById("anual");
+
+
+          selected2?.setAttribute("style", "background-color: #01A0E2; color: white; border: none; box-shadow: rgba(22, 27, 29, 0.25) 0px 4px 16px;");
+          selected?.setAttribute("style", "border: 1px solid black;padding: 5% 60%;cursor: pointer;");
     }
 
     this.seleccionarPrecio()
+    this.cambiarCantidadPequena()
+    this.cambiarCantidadMediana()
   }
 
   selecionarCantidad(tier: string) {

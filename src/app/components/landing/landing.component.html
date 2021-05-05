@@ -14,12 +14,12 @@
             </div>
             <div class="derecha">
                 <div class="social">
-                    <a href="https://es-la.facebook.com/docX360/">
+                    <a href="https://es-la.facebook.com/docX360/" target="_blank">
                         <img class="img-responsive" src="assets/img/facebook.png">
                     </a>
                 </div>
                 <div class="social">
-                    <a href="https://www.youtube.com/channel/UCsdZEPQpKadAgtgVHv0k1hw">
+                    <a  target="_blank" href="https://www.youtube.com/channel/UCsdZEPQpKadAgtgVHv0k1hw" >
                         <img class="img-responsive" src="assets/img/youtube.png">
                     </a>
                 </div>
@@ -56,6 +56,7 @@
     </div>
 
     <div class="contenido colunma">
+
         <div class="divTitulo4">
             <div class="textos">
                 <div class="titulo">
@@ -74,7 +75,7 @@
             <div class="video">
                 <h2>Esto es docX360...</h2>
 
-                <iframe height="300px" src="https://www.youtube.com/embed/hf9iV0XCTtc"
+                <iframe  height="300px" src="https://www.youtube.com/embed/RFv88I7blgw"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -84,11 +85,11 @@
         </div>
         <div class="franja">
             <div class="textos">
-                <p>Ovidate de las discrepancias con el SAT y de los CFDI’s inválidos. Toda la solución bajo el mismo
+                <p>Olvidate de las discrepancias con el SAT y de los CFDI’s inválidos. Toda la solución bajo el mismo
                     nombre, docx360.</p>
             </div>
             <div class="divBoton">
-                <div class="boton">
+                <div routerLink="/registro" class="boton">
                     <p>Acceder Ahora</p>
                 </div>
             </div>
@@ -97,10 +98,10 @@
             <h2>¿Para quién es docX?</h2>
         </div>
         <div class="cuadros">
-            <div class="cuadro">
+            <div class="cuadro animado3">
                 <img class="img-responsive" src="assets/img/imagen1.png">
             </div>
-            <div class="cuadro2">
+            <div class="cuadro2 animado2">
                 <h3>Altos Ejecutivos</h3>
                 <p>Control total. En solo un vistazo sabrás todo lo que está pasando fiscal y financieramente en tu
                     empresa. Realiza auditorías silenciosas a tu equipo contable, identifica proveedores en listas
@@ -109,20 +110,20 @@
                         decisiones inteligentes nunca había sido tan fácil.</b>
                 </p>
             </div>
-            <div class="cuadro2 cuarto">
+            <div class="cuadro2 cuarto animado3">
                 <h3>Contadores</h3>
                 <p>Optimiza tus tiempos de trabajo al máximo. Visualiza, cruza y valida cualquier CFDI en segundos.
                     Además, genera reportes por prioridad o volumen y obtén los acumulados de las percepciones y
                     deducciones de cada trabajador y la base de cálculo de impuestos sobre la nómina (incluyendo el
                     ISR). <b>La satisfacción de tus clientes está garantizada.</b></p>
             </div>
-            <div class="cuadro tercero">
+            <div class="cuadro tercero animado2">
                 <img class="img-responsive" src="assets/img/imagen2.png">
             </div>
             <div class="cuadro">
-                <img class="img-responsive" src="assets/img/imagen3.png">
+                <img class="img-responsive animado3" src="assets/img/imagen3.png">
             </div>
-            <div class="cuadro2">
+            <div class="cuadro2 animado2">
                 <h3>Freelancers</h3>
                 <p>La historica complejidad del SAT es cosa del pasado. La simpleza de docX360 vuelve la monitorización
                     fiscal una tarea simple. Lleva el control de tus ingresos y egresos, traslados de IVA y flujos de
@@ -131,7 +132,7 @@
         </div>
         <carousel [cellsToShow]="1" [height]="640">
             <div class="carousel-cell tips">
-                <div class="fondo">
+                <div class="fondo animado3">
                     <h2>¿Cómo iniciar con docX360?</h2>
                     <div class="contenidoTips">
                         <div class="lista">
@@ -148,7 +149,7 @@
                         <div class="mensaje">
                             <h2>Accede a tu Prueba Gratuita.</h2>
                             <div class="divBoton">
-                                <div routerLink="/registro" class="boton">
+                                <div routerLink="/registro" routerLink="/registro" class="boton">
                                     <p>¡Quiero 30 Días Gratis!</p>
                                 </div>
                             </div>
@@ -168,13 +169,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="tarjetas">
+                <div class="tarjetas animado2">
                     <div class="blanca">
                         <h2>¿Qué estás esperando?</h2>
                         <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
                             llevar las finanzas.</p>
                         <div class="divBoton">
-                            <div class="boton">
+                            <div routerLink="/registro" class="boton">
                                 <p>¡Quiero 30 Días Gratis!</p>
                             </div>
                         </div>
@@ -236,7 +237,7 @@
                         <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
                             llevar las finanzas.</p>
                         <div class="divBoton">
-                            <div class="boton">
+                            <div routerLink="/registro" class="boton">
                                 <p>¡Quiero 30 Días Gratis!</p>
                             </div>
                         </div>
@@ -298,7 +299,7 @@
                         <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
                             llevar las finanzas.</p>
                         <div class="divBoton">
-                            <div class="boton">
+                            <div routerLink="/registro" class="boton">
                                 <p>¡Quiero 30 Días Gratis!</p>
                             </div>
                         </div>
@@ -360,7 +361,7 @@
                         <p>Impulsa el desempeño financiero y el cumplimiento fiscal de tu empresa. Una nueva forma de
                             llevar las finanzas.</p>
                         <div class="divBoton">
-                            <div class="boton">
+                            <div routerLink="/registro" class="boton">
                                 <p>¡Quiero 30 Días Gratis!</p>
                             </div>
                         </div>
@@ -383,46 +384,46 @@
                 </div>
             </div>
         </carousel>
-        <div class="franja2">
-            <h2>¿Para quién es docX?</h2>
+        <div class="franja2 animado">
+            <h2>¿Por qué docX?</h2>
         </div>
         <div class="cuadros2">
-            <div class="cuadro">
+            <div class="cuadro animado">
                 <img class="img-responsive" src="assets/img/ingreso.png">
                 <h3>Ingresos y Gastos</h3>
                 <p>Visualiza todo el detalle de tus clientes y proveedores, monitorea el flujo de efectivo y mantén
                     siempre la rastreabilidad de todas tus operaciones.
                 </p>
             </div>
-            <div class="cuadro">
+            <div class="cuadro animado">
                 <img class="img-responsive" src="assets/img/espejo.png">
                 <h3>Somos un Espejo del SAT</h3>
                 <p>Analiza el comportamiento de tus impuestos, válida y cruza cualquier CFDI, detecta discrepancias
                     fiscales y proveedores en listas negras. ¡Provisiona a tu favor!
                 </p>
             </div>
-            <div class="cuadro">
+            <div class="cuadro animado">
                 <img class="img-responsive" src="assets/img/control.png">
                 <h3>Control Total</h3>
                 <p>Información verídica y precisa en tiempo real. Lleva a cabo auditorías silenciosas a tu equipo de
                     contabilidad, válida y compara con lo “real”, y genera tus propios reportes al instante.
                 </p>
             </div>
-            <div class="cuadro">
+            <div class="cuadro animado">
                 <img class="img-responsive" src="assets/img/tecno.png">
                 <h3>Tecnología en la nube</h3>
                 <p>Nuestra plataforma se encuentra alojada en la nube. Así, vayas a donde vayas podrás acceder a tu
                     cuenta de DocX360 desde cualquier dispositivo.
                 </p>
             </div>
-            <div class="cuadro">
+            <div class="cuadro animado">
                 <img class="img-responsive" src="assets/img/costo.png">
                 <h3>Low cost</h3>
                 <p>La relación costo - beneficio de docx360 nos vuelve la inversión más inteligente para la
                     monitorización de las finanzas empresariales.
                 </p>
             </div>
-            <div class="cuadro">
+            <div class="cuadro animado">
                 <img class="img-responsive" src="assets/img/interfaz.png">
                 <h3>Interfaz Intuitiva</h3>
                 <p>No necesitas ningún conocimiento de contabilidad o finanzas para entender y administrar nuestra
@@ -432,13 +433,13 @@
 
 
         </div>
-        <div class="divTitulo3">
+        <div class="divTitulo3 animado">
             <div class="titulo">
                 <h1 class="color">¡Accede Ahora Al Mejor Precio!</h1>
             </div>
             <div class="planes">
-                <div (click)="selecionarTipoPlan('mensual')" class="plan selected">MENSUAL</div>
-                <div (click)="selecionarTipoPlan('anual')" class="plan2">ANUAL</div>
+                <div (click)="selecionarTipoPlan('mensual')" id="mensual" class="plan">MENSUAL</div>
+                <div (click)="selecionarTipoPlan('anual')" id="anual" class="plan2">ANUAL</div>
             </div>
 
             <div class="tarjetasPlanes">
@@ -556,7 +557,7 @@
                 <div class="personal">
                     <h3>Personal</h3>
                     <div class="precio">
-                        <h1>{{precioPersonal}}</h1>
+                        <h1>${{precioPersonal}}</h1>
                         <p *ngIf="mensual">al mes</p>
                         <p *ngIf="mensual == false">al año</p>
                     </div>
@@ -597,7 +598,7 @@
                 <div class="personal">
                     <h3>Pequeña</h3>
                     <div class="precio">
-                        <h1>{{precioPequena}}</h1>
+                        <h1>${{precioPequena}}</h1>
                         <p *ngIf="mensual">al mes</p>
                         <p *ngIf="mensual == false">al año</p>
                     </div>
@@ -638,7 +639,7 @@
                 <div class="personal">
                     <h3>Mediana</h3>
                     <div class="precio">
-                        <h1>{{precioMediana}}</h1>
+                        <h1>${{precioMediana}}</h1>
                         <p *ngIf="mensual">al mes</p>
                         <p *ngIf="mensual == false">al año</p>
                     </div>
@@ -683,7 +684,7 @@
         </div>
 
 
-        <div class="divParrafo">
+        <div class="divParrafo animado">
             <div class="titulo precio">
                 <h1>Preguntas Frecuentes</h1>
             </div>
@@ -741,7 +742,7 @@
             </div>
 
         </div>
-        <div class="divSlider">
+        <div class="divSlider animado">
             <h2>Opiniones de Nuestros Clientes</h2>
             <div id="slider">
                 <input type="radio" name="slider" id="slide1" checked>
@@ -753,7 +754,7 @@
                         <div class="inner">
                             <div class="slide slide_1">
                                 <div class="slide-content">
-                                    <img class="img-responsive" src="assets/img/user.png">
+                                    <img class="img-responsive" src="assets/img/raul-ramos.png">
                                     <p>Me encantó ver, al instante, los clientes y proveedores que están en las listas
                                         negras del SAT. Con docX360 es súper fácil. Raúl Ramo</p>
                                     <p class="autor">Director General
@@ -786,7 +787,7 @@
                             </div>
                             <div class="slide slide_4">
                                 <div class="slide-content">
-                                    <img class="img-responsive" src="assets/img/user.png">
+                                    <img class="img-responsive" src="assets/img/lilia-flores.png">
                                     <p>Un reporte que tomaba semanas, para presupuestar nuestro gasto nominal, hoy lo
                                         obtengo de inmediato con docX360.</p>
                                     <p class="autor">Lilia Flores
