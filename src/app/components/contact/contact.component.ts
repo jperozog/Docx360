@@ -19,4 +19,9 @@ export class ContactComponent implements OnInit {
     swal.fire('Envio exitoso...', this.titularAlerta, 'success');
   }
 
+  scrollToElement(element:HTMLElement): void {
+    console.log(element);
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+
 }

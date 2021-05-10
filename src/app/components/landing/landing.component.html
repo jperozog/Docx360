@@ -691,9 +691,9 @@
             <div class="parrafo">
                 <div id="menu">
                     <ul>
-                        <li class="selected" (click)="listaPreguntas('general')"><a>Generalidades</a></li>
-                        <li><a (click)="listaPreguntas('fiscal')">Fiscal y contable</a></li>
-                        <li><a (click)="listaPreguntas('pagos')">Pagos y suscripción </a></li>
+                        <li id="general" class="selected" (click)="listaPreguntas('general')"><a >Generalidades</a></li>
+                        <li id="fiscal"><a (click)="listaPreguntas('fiscal')" >Fiscal y contable</a></li>
+                        <li id="pagos"><a (click)="listaPreguntas('pagos')" >Pagos y suscripción </a></li>
                     </ul>
                 </div>
             </div>
@@ -756,7 +756,9 @@
                                 <div class="slide-content">
                                     <img class="img-responsive" src="assets/img/raul-ramos.png">
                                     <p>Me encantó ver, al instante, los clientes y proveedores que están en las listas
-                                        negras del SAT. Con docX360 es súper fácil. Raúl Ramo</p>
+                                        negras del SAT. Con docX360 es súper fácil.</p>
+                                        <p class="autor">Raúl Ramo
+                                        </p>
                                     <p class="autor">Director General
                                     </p>
                                     <p class="autor">Gefrieren S.A.</p>
@@ -765,7 +767,7 @@
                             <div class="slide slide_2">
                                 <div class="slide-content">
                                     <img class="img-responsive" src="assets/img/javier-marinez.png">
-                                    <p>Ahora tengo una película mucho mas clara y en Fempo real de las empresas que
+                                    <p>Ahora tengo una película mucho mas clara y en tiempo real de las empresas que
                                         administro. Con docX360 ubico cualquier diferencia o discrepancia en los
                                         ingresos y egresos. Incluso se, cuanto traemos en cuentas X cobrar y pagar.</p>
                                     <p class="autor">Javier Marinez
@@ -851,22 +853,24 @@
             </div>
         </div>
         <div class="segundaParte">
-            <a routerLink="/terminos">Términos y Condiciones</a>
+            <a class="terminos" routerLink="/terminos">Términos y Condiciones</a>
             <div class="centro">
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/mail2.png">
-                    <p>Email</p>
-                    <p>sos@docx360.com</p>
+                        <img class="img-responsive" src="assets/img/mail2.png">
+                        <a href="mailto:sos@docx360.com ">Email</a>
+                        <a href="mailto:sos@docx360.com ">sos@docx360.com</a>
                 </div>
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/facebook2.png">
-                    <p>Facebook</p>
-                    <p>docx360</p>
+                        <img class="img-responsive" src="assets/img/facebook2.png">
+                        <a  href="https://es-la.facebook.com/docX360/" target="_blank">Facebook</a>
+                        <a  href="https://es-la.facebook.com/docX360/" target="_blank">docx360</a>
+
                 </div>
                 <div class="social">
-                    <img class="img-responsive" src="assets/img/phone2.png">
-                    <p>Teléfono</p>
-                    <p>+57 123-1234567</p>
+        
+                        <img class="img-responsive" src="assets/img/phone2.png">
+                        <a href="tel:+55 5308 1018" >Teléfono</a>
+                        <a href="tel:+55 5308 1018">+57 123-1234567</a>
                 </div>
 
             </div>

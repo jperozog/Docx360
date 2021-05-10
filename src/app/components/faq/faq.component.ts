@@ -101,6 +101,8 @@ export class FAQComponent implements OnInit {
 
   ngOnInit(): void {
     this.listapreguntas = this.general
+    let selected = document.getElementById("general");
+    selected?.classList.add("selectedQ");
   }
 
   listaPreguntas(pregunta:string){
@@ -108,12 +110,40 @@ export class FAQComponent implements OnInit {
     this.contenidoSeleccionado = ""
     if(pregunta == "general"){
       this.listapreguntas = this.general
+
+
+      let selected = document.getElementById("general");
+      let selected2 = document.getElementById("pagos");
+      let selected3 = document.getElementById("fiscal");
+
+
+      selected?.classList.add("selectedQ");
+      selected2?.classList.remove("selectedQ");
+      selected3?.classList.remove("selectedQ");
     }
     if(pregunta == "fiscal"){
       this.listapreguntas = this.fiscal
+
+      let selected = document.getElementById("fiscal");
+      let selected2 = document.getElementById("pagos");
+      let selected3 = document.getElementById("general");
+
+
+          selected?.classList.add("selectedQ");
+          selected2?.classList.remove("selectedQ");
+          selected3?.classList.remove("selectedQ");
     }
     if(pregunta == "pagos"){
       this.listapreguntas = this.pagos
+
+      let selected = document.getElementById("pagos");
+      let selected2 = document.getElementById("fiscal");
+      let selected3 = document.getElementById("general");
+
+
+          selected?.classList.add("selectedQ");
+          selected2?.classList.remove("selectedQ");
+          selected3?.classList.remove("selectedQ");
     }
   }
 
