@@ -418,7 +418,7 @@
                 
                 &.check{
                     flex-direction: column;
-                    width: 60%;
+                    width: 90%;
 
                     .divcheck{
                         display: flex;
@@ -426,7 +426,7 @@
                         align-items: center;
                         justify-content: center;
                         label{
-                            width: 75%;
+                            width: 48%;
                             text-align: center;
                             padding-left: 1.3em;
                             position: relative;
@@ -2417,6 +2417,12 @@
         justify-content: center;
         border-bottom: 1px solid gray;
 
+        .terminos{
+            color: white;
+            text-decoration: none;
+            margin-top: 2%;
+        }
+
     .centro{
         width: 100%;
         display: flex;
@@ -2435,10 +2441,11 @@
                 width: 10%;
                 margin-bottom: 5%;
             }
-            p{
+            a{
                 color: white;
                 font-size: 12px;
                 font-weight: 300;
+                text-decoration: none;
             }
         }
           
@@ -2461,8 +2468,7 @@
 
     }  
 
-
-    @media (orientation: portrait){
+   
         .animado{
             opacity: 0;
             transition: all 1s;
@@ -2521,8 +2527,6 @@
                 transform: translateX(0);
             }
         }
-    }
-
     
     
 
@@ -3442,6 +3446,69 @@
     }
 
     }
+
+
+    @media (orientation: portrait){
+        .animado{
+            opacity: 0;
+            transition: all 1s;
+        }
+    
+        .animado2{
+            opacity: 0;
+            transition: all 2s;
+        }
+    
+        .animado3{
+            opacity: 0;
+            transition: all 2s;
+        }
+    
+        .animado4{
+            opacity: 0;
+            transition: all 2s;
+        }
+    
+        .mostrarArriba{
+            animation: mostrarArriba 1s;
+        }
+    
+        .mostrarDerecha{
+            animation: mostrarDerecha 1s;
+        }
+    
+        .mostrarIzquierda{
+            animation: mostrarIzquierda 1s;
+        }
+    
+        @keyframes mostrarArriba{
+            0%{
+                transform: translateY(60px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    
+        @keyframes mostrarDerecha{
+            0%{
+                transform: translateX(60px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+    
+        @keyframes mostrarIzquierda{
+            0%{
+                transform: translateX(-60px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+    }
+
 }
 
 @media (min-width: 1100px) {
@@ -4956,6 +5023,67 @@
 
     } 
 
+    }
+
+    @media (orientation: portrait){
+        .animado{
+            opacity: 0;
+            transition: all 1s;
+        }
+    
+        .animado2{
+            opacity: 0;
+            transition: all 2s;
+        }
+    
+        .animado3{
+            opacity: 0;
+            transition: all 2s;
+        }
+    
+        .animado4{
+            opacity: 0;
+            transition: all 2s;
+        }
+    
+        .mostrarArriba{
+            animation: mostrarArriba 1s;
+        }
+    
+        .mostrarDerecha{
+            animation: mostrarDerecha 1s;
+        }
+    
+        .mostrarIzquierda{
+            animation: mostrarIzquierda 1s;
+        }
+    
+        @keyframes mostrarArriba{
+            0%{
+                transform: translateY(60px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    
+        @keyframes mostrarDerecha{
+            0%{
+                transform: translateX(60px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
+    
+        @keyframes mostrarIzquierda{
+            0%{
+                transform: translateX(-60px);
+            }
+            100%{
+                transform: translateX(0);
+            }
+        }
     }
 
     
