@@ -24,7 +24,7 @@ export class PreciosComponent implements OnInit {
   cantidadMediana: any = []
   cantidadPequenaSelected:number = 0
   cantidadMedianaSelected: number = 0
-  mensual:boolean = true
+  mensual:boolean = false
   tipoPlanSelected:number = 1
   titularAlerta:string = "Tu mensaje ha sido enviado. Te contactaremos en breve."
   general: any = [
@@ -259,7 +259,7 @@ export class PreciosComponent implements OnInit {
     this.listapreguntas = this.general
     let selectedq = document.getElementById("general");
     selectedq?.classList.add("selectedQ");
-    this.listaplanes = this.mensuales
+    this.listaplanes = this.anuales
 
     this.listaplanes.forEach((e: any) => {
       if (e.tier == "Personal") {
