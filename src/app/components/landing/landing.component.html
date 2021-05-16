@@ -47,8 +47,8 @@
                         <li><a routerLink="/precios">Precios</a></li>
                         <li><a routerLink="/faq">Preguntas Frecuentes</a></li>
                         <li><a routerLink="/contacto">Contáctanos</a></li>
+                        <li><a routerLink="/registro">Registrate</a></li>
                         <li><a routerLink="/">Ingresar</a></li>
-                        <li><a routerLink="/registro">Registrarse</a></li>
                     </ul>
                 </div>
             </div>
@@ -86,7 +86,7 @@
         <div class="franja">
             <div class="textos">
                 <p>Olvidate de las discrepancias con el SAT y de los CFDI’s inválidos. Toda la solución bajo el mismo
-                    nombre, docx360.</p>
+                    nombre, docX360.</p>
             </div>
             <div class="divBoton">
                 <div routerLink="/registro" class="boton">
@@ -113,7 +113,7 @@
             <div class="cuadro2 cuarto animado3">
                 <h3>Contadores</h3>
                 <p>Optimiza tus tiempos de trabajo al máximo. Visualiza, cruza y valida cualquier CFDI en segundos.
-                    Además, genera reportes por prioridad o volumen y obtén los acumulados de las percepciones y
+                   Obtén los acumulados de las percepciones y
                     deducciones de cada trabajador y la base de cálculo de impuestos sobre la nómina (incluyendo el
                     ISR). <b>La satisfacción de tus clientes está garantizada.</b></p>
             </div>
@@ -130,7 +130,7 @@
                     efectivo <b>en un mismo lugar y como un experto.</b></p>
             </div>
         </div>
-        <carousel [cellsToShow]="1" [height]="640">
+        <carousel [cellsToShow]="1" [height]="640" >
             <div class="carousel-cell tips">
                 <div class="fondo animado3">
                     <h2>¿Cómo iniciar con docX360?</h2>
@@ -186,7 +186,7 @@
                         <p>Todos nuestros planes cuentan con 30 días de garantía para que puedas probar los grandes
                             beneficios de usar docX360.</p>
                         <div class="docx360">
-                            <p>docx360</p>
+                            <p>docX360</p>
                             <div class="flechas">
                                 <p>
                                     < </p>
@@ -248,7 +248,7 @@
                         <p>Hemos diseñado la plataforma para que se fácil, práctica e intuitiva para cualquier persona
                             sin importar su perfil profesional.</p>
                         <div class="docx360">
-                            <p>docx360</p>
+                            <p>docX360</p>
                             <div class="flechas">
                                 <p>
                                     < </p>
@@ -310,7 +310,7 @@
                         <p>Utiliza los recursos y herramientas que necesites, cuando las necesites. Se acabaron las
                             funciones innecesarias con grandes costos.</p>
                         <div class="docx360">
-                            <p>docx360</p>
+                            <p>docX360</p>
                             <div class="flechas">
                                 <p>
                                     < </p>
@@ -368,11 +368,11 @@
                     </div>
                     <div class="morada">
                         <p class="pasos">Paso 4</p>
-                        <h2>Todo en Mismo Lugar</h2>
+                        <h2>Todo en un Mismo Lugar</h2>
                         <p>Es momento de dejar atrás la pérdida de comprobantes, documentos y reportes importantes. Con
                             docX360 perder información es cosa del pasado.</p>
                         <div class="docx360">
-                            <p>docx360</p>
+                            <p>docX360</p>
                             <div class="flechas">
                                 <p>
                                     < </p>
@@ -413,13 +413,13 @@
                 <img class="img-responsive" src="assets/img/tecno.png">
                 <h3>Tecnología en la nube</h3>
                 <p>Nuestra plataforma se encuentra alojada en la nube. Así, vayas a donde vayas podrás acceder a tu
-                    cuenta de DocX360 desde cualquier dispositivo.
+                    cuenta de docX360 desde cualquier dispositivo.
                 </p>
             </div>
             <div class="cuadro animado">
                 <img class="img-responsive" src="assets/img/costo.png">
                 <h3>Low cost</h3>
-                <p>La relación costo - beneficio de docx360 nos vuelve la inversión más inteligente para la
+                <p>La relación costo - beneficio de docX360 nos vuelve la inversión más inteligente para la
                     monitorización de las finanzas empresariales.
                 </p>
             </div>
@@ -452,11 +452,11 @@
                     <div class="precio">
                         <h1>${{precioPersonal}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
-                    <select>
-                        <option *ngFor="let c of cantidadPersonal" [value]="c.precio">{{c.cantidad}}</option>
-                    </select>
+                 
+                        <p *ngFor="let c of cantidadPersonal">{{c.cantidad}}</p>
+                
                     <div class="check">
                         <img class="img-responsive" src="assets/img/check.png">
                     </div>
@@ -485,7 +485,7 @@
                     <div class="precio">
                         <h1>${{precioPequena}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <select (change)="cambiarCantidadPequena()" [(ngModel)]="cantidadPequenaSelected">
                         <option *ngFor="let c of cantidadPequena" [value]="c.cantidad">{{c.cantidad}}</option>
@@ -518,7 +518,7 @@
                     <div class="precio">
                         <h1>${{precioMediana}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <select (change)="cambiarCantidadMediana()" [(ngModel)]="cantidadMedianaSelected">
                         <option selected *ngFor="let c of cantidadMediana" [value]="c.cantidad">{{c.cantidad}}</option>
@@ -555,13 +555,11 @@
                     <div class="precio">
                         <h1>${{precioPersonal}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <div class="check">
                         <p>Documentos</p>
-                        <select>
-                            <option *ngFor="let c of cantidadPersonal" [value]="c.precio">{{c.cantidad}}</option>
-                        </select>
+                        <p *ngFor="let c of cantidadPersonal">{{c.cantidad}}</p>
                     </div>
                     <div class="check">
                         <p>30 Días de Prueba</p>
@@ -596,7 +594,7 @@
                     <div class="precio">
                         <h1>${{precioPequena}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <div class="check">
                         <p>Documentos</p>
@@ -637,7 +635,7 @@
                     <div class="precio">
                         <h1>${{precioMediana}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <div class="check">
                         <p>Documentos</p>
@@ -724,7 +722,7 @@
                     <img class="img-responsive" src="assets/img/bro.png">
                 </div>
                 <div class="texto">
-                    <p>Si por cualquier motivo, docx360 no cumple con tus expectativas, puedes cancelar tu suscripción
+                    <p>Si por cualquier motivo, docX360 no cumple con tus expectativas, puedes cancelar tu suscripción
                         dentro de los</p>
                     <p class="color">primeros 30 días.</p>
                 </div>
@@ -858,7 +856,7 @@
                 <div class="social">
                         <img class="img-responsive" src="assets/img/facebook2.png">
                         <a  href="https://es-la.facebook.com/docX360/" target="_blank">Facebook</a>
-                        <a  href="https://es-la.facebook.com/docX360/" target="_blank">docx360</a>
+                        <a  href="https://es-la.facebook.com/docX360/" target="_blank">docX360</a>
 
                 </div>
                 <div class="social">
@@ -872,7 +870,7 @@
         </div>
         <div class="terceraParte">
             <div class="centro">
-                <p>© 2021 docx360. Todos los derechos reservados. Developed by Smartbis</p>
+                <p>© 2021 docX360. Todos los derechos reservados. Developed by Smartbis</p>
 
             </div>
         </div>
@@ -898,7 +896,7 @@
                 <div class="social">
                         <img class="img-responsive" src="assets/img/facebook2.png">
                         <a  href="https://es-la.facebook.com/docX360/" target="_blank">Facebook</a>
-                        <a  href="https://es-la.facebook.com/docX360/" target="_blank">docx360</a>
+                        <a  href="https://es-la.facebook.com/docX360/" target="_blank">docX360</a>
 
                 </div>
                 <div class="social">
@@ -912,7 +910,7 @@
         </div>
         <div class="terceraParte">
             <div class="centro">
-                <p>© 2021 docx360. Todos los derechos reservados. Developed by Smartbis</p>
+                <p>© 2021 docX360. Todos los derechos reservados. Developed by Smartbis</p>
 
             </div>
         </div>

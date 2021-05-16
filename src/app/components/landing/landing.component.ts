@@ -51,7 +51,7 @@ export class LandingComponent implements OnInit {
     {
       id: 4,
       pregunta: "¿docX360 puede sustituir a mi contador?",
-      contenido: "Al contrario, docX360 es una herramienta de apoyo para el contador y todas aquellas personas responsables de la administración de un RFC. Por la forma en la que presenta la información,facilita/agiliza la id "
+      contenido: "Al contrario, docX360 es una herramienta de apoyo para el contador y todas aquellas personas responsables de la administración de un RFC. Por la forma en la que presenta la información, facilita/agiliza la identificación de posibles discrepancias o errores en los registros de los sistemas administrativos. "
     }
   ]
 
@@ -59,11 +59,11 @@ export class LandingComponent implements OnInit {
     {
       id: 1,
       pregunta: "Si docX360 es un espejo del SAT ¿Eso significa que también puede monitorear y auditar mis percepciones y salidas en cuentas bancarias para identificar discrepancias fiscales en mis declaraciones? ",
-      contenido: "Por el momento, únicamente descargamos los estados de cuenta pero no relacionamos o indexamos cada uno de los depósitos o retiros en dicha cuenta. Este servicio estará disponible en el 2021, así como la descarga y clasificación de algunos tipos de declaración para, cada día, facilitarla identificación de posibles discrepancias.  "
+      contenido: "Por el momento, únicamente descargamos los estados de cuenta pero no relacionamos o indexamos cada uno de los depósitos o retiros en dicha cuenta. Este servicio estará disponible en el 2021, así como la descarga y clasificación de algunos tipos de declaración para, cada día, facilitar la identificación de posibles discrepancias.  "
     },
     {
       id: 2,
-      pregunta: "La mayoría de mis gastos, son a través de compañías en el extranjero; los comprobantes (invoices) que me emiten no generan IVA pero sí son deducibles, ¿docx360 también consideraestos invoices en sus reportes?  ",
+      pregunta: "La mayoría de mis gastos, son a través de compañías en el extranjero; los comprobantes (invoices) que me emiten no generan IVA pero sí son deducibles, ¿docx360 también considera estos invoices en sus reportes?  ",
       contenido: "No, salvo que haya sido emitido algún tipo de CFDI para el manejo de ciertas operaciones en el extranjero. Tratándose de facturas por servicios o compra de equipos, el responsable de la administración (contador generalmente) debe cargar manualmente estos gastos, ya que no aparecen en ningún registro del SAT"
     },
     {

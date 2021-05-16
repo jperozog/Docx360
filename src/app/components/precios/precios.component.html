@@ -47,8 +47,8 @@
                         <li><a class="selected" routerLink="/precios">Precios</a></li>
                         <li><a routerLink="/faq">Preguntas Frecuentes</a></li>
                         <li><a routerLink="/contacto">Contáctanos</a></li>
+                        <li><a routerLink="/registro">Registrate</a></li>
                         <li><a routerLink="/">Ingresar</a></li>
-                        <li><a routerLink="/registro">Registrarse</a></li>
                     </ul>
                 </div>
             </div>
@@ -75,11 +75,9 @@
                     <div class="precio">
                         <h1>${{precioPersonal}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
-                    <select>
-                        <option *ngFor="let c of cantidadPersonal" [value]="c.precio">{{c.cantidad}}</option>
-                    </select>
+                    <p *ngFor="let c of cantidadPersonal">{{c.cantidad}}</p>
                     <div class="check">
                         <img class="img-responsive" src="assets/img/check.png">
                     </div>
@@ -108,7 +106,7 @@
                     <div class="precio">
                         <h1>${{precioPequena}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <select (change)="cambiarCantidadPequena()" [(ngModel)]="cantidadPequenaSelected">
                         <option *ngFor="let c of cantidadPequena" [value]="c.cantidad">{{c.cantidad}}</option>
@@ -141,7 +139,7 @@
                     <div class="precio">
                         <h1>${{precioMediana}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <select (change)="cambiarCantidadMediana()" [(ngModel)]="cantidadMedianaSelected">
                         <option selected *ngFor="let c of cantidadMediana" [value]="c.cantidad">{{c.cantidad}}</option>
@@ -178,13 +176,11 @@
                     <div class="precio">
                         <h1>${{precioPersonal}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <div class="check">
                         <p>Documentos</p>
-                        <select>
-                            <option *ngFor="let c of cantidadPersonal" [value]="c.precio">{{c.cantidad}}</option>
-                        </select>
+                        <p *ngFor="let c of cantidadPersonal">{{c.cantidad}}</p>
                     </div>
                     <div class="check">
                         <p>30 Días de Prueba</p>
@@ -219,7 +215,7 @@
                     <div class="precio">
                         <h1>${{precioPequena}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <div class="check">
                         <p>Documentos</p>
@@ -260,7 +256,7 @@
                     <div class="precio">
                         <h1>${{precioMediana}}</h1>
                         <p *ngIf="mensual">al mes</p>
-                        <p *ngIf="mensual == false">al año</p>
+                        <p *ngIf="mensual == false">USD al año</p>
                     </div>
                     <div class="check">
                         <p>Documentos</p>
